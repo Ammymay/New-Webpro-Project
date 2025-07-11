@@ -9,13 +9,45 @@
     <title>Desert Page</title>
 </head>
 
+<style>
+    @media only screen and (max-width: 600px) {
+        .logo {
+        display: none;
+    }
+    #header {
+        width: 100%;
+        height: 10.5vh;
+    }
+    .header_img {
+        display: none;
+    }
+    body {
+        padding: 8px 2%;
+    }
+    #button {
+        width: 30%; 
+        padding: 15px;
+        margin: 4%;  
+    }
+.desert-container{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+img {
+    width: 100%;
+    height: auto;
+}
+    }
+</style>
+
 <body>
  <body class="box-border size-64 border-10 p-10">
     <header>
         <div style="margin-left: 300px">
             <ul style="list-style: none; display: flex; flex-wrap: wrap; margin-top: 3%; padding: 20px 10px">
-                <li style="padding-right: 90px;"><img style="width: 80px; height: 50px;" src="/Resources/logo.png" alt="logo"></li>
-                <li style="padding-left: 90px;"><img style="width: 70px; height: 40px; border-radius: 1000px;" src="/Resources/Maryam.png" alt="Adim"></li>
+                <li class="logo" style="padding-right: 90px;"><img style="width: 80px; height: 50px;" src="../Resources/logo.png" alt="logo"></li>
+                <li style="padding-left: 90px;"><img style="width: 70px; height: 40px; border-radius: 1000px;" src="../Resources/Maryam.png" alt="Adim"></li>
             </ul>
         </div>
     </header>
@@ -64,10 +96,10 @@
         </div>
     </div>
     
-     <div style="margin-left: 200px;">
+     <div id="button" style="margin-left: 200px;">
             <input type="button" value="Create +" style="background-color: rgba(255, 89, 0, 0.674); border-radius: 16px; padding: 20px; width: 226px;">
             <input type="button" value="Edit" style="background-color: rgba(246, 160, 110, 0.674); border-radius: 16px; padding: 20px; width: 226px;">
-           <a href="../html folder/foodListing.html"><input type="button" value="Back" style="background-color: rgb(247, 244, 243); border-radius: 16px; padding: 20px; width: 226px;"></a> 
+           <a href="./foodListing.html"><input type="button" value="Back" style="background-color: rgb(247, 244, 243); border-radius: 16px; padding: 20px; width: 226px;"></a> 
      </div>
 </body>   
 </body>

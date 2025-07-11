@@ -8,38 +8,13 @@
     padding: 5px 5%;
 }
 /* ----------Landing page setion---------------- */
-#header {
-    width: 100%;
-    height: 40vh;
-}
-.navbar {
-    left: 0;
-    right: 0;
-    width: 100%;
-    height: 10%;
-    padding: 20px 6px;
-    display: flex;
-    flex-wrap: wrap;
-    align-items: center;
-    align-content: center;
-    justify-content:space-between;
-}
-nav ul li {
-    display: inline-block;
-    list-style: none;
-    margin: 5px 10px;
-    flex-wrap: wrap;
-}
+
 nav ul li a {
     padding: 0.25em 1em;
     color: #0f0f0f;
     text-decoration: none;
     font-size: 16px;
     border-radius: 8px;
-}
-.body_img {
-    float: right; 
-    width: 0%
 }
 /* ----------------desert page section-------------------- */
 
