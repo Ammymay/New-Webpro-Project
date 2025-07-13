@@ -6,46 +6,39 @@
      <link rel="stylesheet" href="./index.html/main.css">
      <link href="https://unpkg.com/tailwindcss@^1.0/dist/tailwind.min.css" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css" integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg==" crossorigin="anonymous" referrerpolicy="no-referrer"/>
-    <script src="./index.html/validation.js"></script>
+    <script type="module" src="../js folder/validation.js" defer></script>
     <title>Signup</title>
 </head>
 <body class="box-border size-64 border-10 p-10">
-
-    <div class="float-left object-top-right mx-auto block h-auto rounded-full sm:mx-0 sm:shrink-0">
-        <img src="./Resources/New Picture (1).png" alt="" class="h-auto max-w-xs">
-
-    </div>
-    
-    <div class="place-content-center">
-        
-        <img src="./Resources/logo.png" alt="logo" class="float-right h-14 w-xs">
-        
-        <h2 class="text-xl text-center">Glad to have you onboard!</h2>
+    <div>
+        <h2 class="text-xl text-center text-3xl">Glad to have you onboard!</h2>
+     </div>
+    <div class="flex flex-wrap-wrap gap-2">
+     <div class="float-left object-top-right mx-auto block h-auto rounded-full sm:mx-0 sm:shrink-0">
+        <img src="../Resources/New Picture (1).png" alt="" class="h-auto max-w-xs">
+     </div>
+        <br>
         <p id="error-message"></p>
         <div class="container">
-            <p class="text-center">Sign up to have an account with us</p>
             <br>
                 <div class="content">
+                     <p class="text-center">Sign up to have an account with us</p>
                     <form action="method='post">
                         <div>
                         <label for="name">Full name</label> <br>
-                        <input type="text" placeholder="Enter fullname" id="name" required>
-                        </div>
-                        <div>
-                        <label for="email">Email</label> <br>
-                        <input type="text" placeholder="Enter valid email" id="email">
+                        <input style="width: 50%; border-radius: 16px; padding: 4px 6px; border: 2px solid rgb(243, 240, 240);" type="text" placeholder="Enter fullname" id="email" required>
                         </div>
                         <div>
                         <label for="category">Category</label> <br>
-                        <input type="text" placeholder="Select your category" id="category">
+                        <input style="width: 50%; border-radius: 16px; padding: 4px 6px; border: 2px solid rgb(243, 240, 240);" type="text" placeholder="Select your category" id="category">
                         </div>
                         <div>
                         <label for="password">Password</label> <br>
-                        <input type="password" placeholder="Enter your password" id="password">
+                        <input style="width: 50%; border-radius: 16px; padding: 4px 6px; border: 2px solid rgb(243, 240, 240);" type="password" placeholder="Enter your password" id="password">
                         </div>
                         <br>
                         <div>
-                        <button type="submit">Signup</button>
+                        <button style="width: 50%; padding: 6px 6px; border-radius: 16px; color: white; background-color: rgb(250, 95, 5);" type="submit" id="submit">Signup</button>
                         </div>
                         <br>
                         <div>
@@ -53,13 +46,13 @@
                         </div>
                         <br>
                         <div>
-                        <img src="./Resources/Google png.png" alt="" style="width: 24px; height: 26px;"><a href="https://accounts.google.com/v3/signin/accountchooser?continue=https%3A%2F%2Fclassroom.google.com%2Fu%2F0%2F&emr=1&followup=https%3A%2F%2Fclassroom.google.com%2Fu%2F0%2F&ifkv=AdBytiMOwjVjV0U4pKSVuOqs60Nkqba09NERI6zvGODdcIqCfcsNtf5CMz6MyGtTCpYhxYTuONPOZQ&passive=1209600&service=classroom&flowName=GlifWebSignIn&flowEntry=ServiceLogin&dsh=S-1291411601%3A1751674565748366">
+                        <img src="../Resources/Google png.png" alt="" style="width: 24px; height: 26px;"><a href="https://accounts.google.com/v3/signin/accountchooser?continue=https%3A%2F%2Fclassroom.google.com%2Fu%2F0%2F&emr=1&followup=https%3A%2F%2Fclassroom.google.com%2Fu%2F0%2F&ifkv=AdBytiMOwjVjV0U4pKSVuOqs60Nkqba09NERI6zvGODdcIqCfcsNtf5CMz6MyGtTCpYhxYTuONPOZQ&passive=1209600&service=classroom&flowName=GlifWebSignIn&flowEntry=ServiceLogin&dsh=S-1291411601%3A1751674565748366">
                             Signup with Google
                         </a>
                         </div>
                         <br>
                         <div class="signin">
-                            <p>Aleady have an account <a style="border: 8px;" href="./index.html/login.html"> <span>Login</span></a></p>
+                            <p>Already have an account <a style="border: 8px;" href="./login.html"> <span style="color: rgb(205, 69, 20); font-weight: 700;">login</span></a></p>
                         </div>
 
                     </form>
@@ -69,5 +62,7 @@
         </div>
 
     </div>
+
+    <script type="module" src="../js folder/validation.js"></script>
 </body>
 </html>

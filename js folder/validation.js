@@ -1,7 +1,8 @@
-// Import the functions you need from the SDKs you need
+//Import the functions you need from the SDKs you need
   import { initializeApp } from "https://www.gstatic.com/firebasejs/11.10.0/firebase-app.js";
   import { getAnalytics } from "https://www.gstatic.com/firebasejs/11.10.0/firebase-analytics.js";
-  import {getAuth, CreateUserWithEmailAndPassword, SignInEmailAndPassword} from "https://www.gstatic.com/firebasejs/11.10.0/firebase-Auth.js"
+  import { getAuth, createUserWithEmailAndPassword } from "https://www.gstatic.com/firebasejs/11.10.0/firebase-auth.js";
+
   
   // TODO: Add SDKs for Firebase products that you want to use
   // https://firebase.google.com/docs/web/setup#available-libraries
@@ -23,18 +24,46 @@
   const analytics = getAnalytics(app);
 
 
-  
 
+  
+//..........Inputs......... 
 const form= document.getElementById(Form)
-const name_input= document.getElementById(name-input)
-const email_input= document.getElementById(email-input)
-const category_input= document.getElementById(category-input)
-const password_input= document.getElementById(password-input)
+const name_input= document.getElementById('name').value
+const email_input= document.getElementById('email').value
+const password_input= document.getElementById('password').value
 const error_message = document.getElementById(error-message)
 
-form.addEventListener('submit', (e) =>{
-e.preventDefault()
+// ...........submit button........
+const submit = document.getElementById('submit');
+submit.addEventListener('click',function (event) {
+event.preventDefault()
+
+// ,,,,,,,,,,,,Input............
+const email_input= document.getElementById('email').value
+const password_input= document.getElementById('password').value
+const error_message = document.getElementById(error-message)
+createUserWithEmailAndPassword(auth, email, password)
+  .then((userCredential) => {
+   
+    // Signed up 
+    const user = userCredential.user;
+    alert("Creating Account....")
+    window.location.href="thanks.html"
+    // ...
+  })
+  .catch((error) => {
+    const errorCode = error.code;
+    const errorMessage = error.message;
+    alert(errorMessage)
+    // ..
+  });
 })
+
+
+
+
+
+
 
 let errors = []
 
